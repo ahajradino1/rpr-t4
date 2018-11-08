@@ -1,20 +1,20 @@
 package ba.unsa.etf.rpr.tutorijal04;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class PlanStudija {
-    private ArrayList<Predmet> izborniPredmeti;
-    private ArrayList<Predmet> obavezniPredmeti;
+    private List<Predmet> izborniPredmeti;
+    private List<Predmet> obavezniPredmeti;
     private String nazivStudija;
-    PlanStudija(ArrayList<Predmet> izborniPredmeti, ArrayList<Predmet> obavezniPredmeti, String nazivStudija) {
+    PlanStudija(List<Predmet> izborniPredmeti, List<Predmet> obavezniPredmeti, String nazivStudija) {
         this.izborniPredmeti = izborniPredmeti;
         this.obavezniPredmeti = obavezniPredmeti;
         this.nazivStudija = nazivStudija;
     }
-    public ArrayList<Predmet> getIzborniPredmeti() {
+    public List<Predmet> getIzborniPredmeti() {
         return izborniPredmeti;
     }
-    public ArrayList<Predmet> getObavezniPredmeti() {
+    public List<Predmet> getObavezniPredmeti() {
         return obavezniPredmeti;
     }
     public String getNazivStudija() {
