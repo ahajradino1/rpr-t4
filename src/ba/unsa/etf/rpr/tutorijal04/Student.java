@@ -23,6 +23,9 @@ public class Student {
     public Set<Predmet> getPredmeti() {
         return predmeti;
     }
+    public int getUkupnoEcts() {
+        return ukupnoEcts;
+    }
     public void upisiStudentaNaPredmet(Predmet p) throws IllegalArgumentException {
         if(ukupnoEcts + p.getEctsBodovi() > 30) throw new IllegalArgumentException("Prekoracen maksimum od 30 ECTS bodova!");
         predmeti.add(p);
